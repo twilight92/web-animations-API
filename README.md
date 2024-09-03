@@ -8,10 +8,11 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
 <br>
 
 ## What I Learned
-✔️ 자바스크립트로 CSS 애니메이션을 자유자재로 컨트롤<br>
-✔️ 웹 애니메이션 표준 기술(Web Standard)
+- 자바스크립트로 CSS 애니메이션을 자유자재로 컨트롤<br>
+- 웹 애니메이션 표준 기술(Web Standard)
 
 <br>
 
 ## Todo
-- [CSS animation VS JS animation](https://github.com/twilight92/web-animations-API/wiki/CSS-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%EA%B3%BC-JS-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98)
+- [x] [CSS animation VS JS animation](https://github.com/twilight92/web-animations-API/wiki/CSS-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%EA%B3%BC-JS-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98) 알아보기
+- [x] CSS Transition 알아보기
