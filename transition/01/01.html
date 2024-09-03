@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hand {
+        position: absolute;
+        width: 200px;
+        left: 400px;
+        top: 100px;
+      }
+
+      .key {
+        position: absolute;
+        width: 150px;
+        left: 100px;
+        top: 50px;
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="hand" src="images/hand.svg" alt="" />
+    <!-- <img class="key" src="images/key.svg" alt="" /> -->
+    <object class="key" data="images/key.svg" type="image/svg+xml"></object>
+
+    <script>
+      const hand = document.querySelector(".hand");
+      const key = document.querySelector(".key");
+      let isKeyInHand = false;
+
+      hand.addEventListener("click", () => {
+        if (isKeyInHand) {
+          key.style.transform = "scale(1) translate(0, 0)";
+        } else {
+          const handRect = hand.getBoundingClientRect();
+          const leftPosition = handRect.left + 150;
+          const topPosition = handRect.top - 60;
+          key.style.transform = `scale(0.5) translate(${leftPosition}px, ${topPosition}px)`;
+        }
+      });
+
+      key.addEventListener("transitionend", () => {
+        isKeyInHand = !isKeyInHand;
+      });
+    </script>
+  </body>
+</html>
