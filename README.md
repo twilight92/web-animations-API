@@ -14,4 +14,4 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
 <br>
 
 ## Todo
-- CSS 애니메이션 VS JS 애니메이
+- CSS animation VS JS animation
