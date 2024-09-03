@@ -16,3 +16,4 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
 ## Todo
 - [x] [CSS animation VS JS animation](https://github.com/twilight92/web-animations-API/wiki/CSS-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%EA%B3%BC-JS-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98) 알아보기
 - [x] CSS Transition 알아보기
+  - object 태그를 활용하여 svg에 transition 적용 실습
