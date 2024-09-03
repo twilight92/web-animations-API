@@ -18,3 +18,5 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
 - [x] CSS Transition 알아보기
   - object 태그를 활용하여 svg에 transition 적용 실습
 - [x] CSS Animation 알아보기
+- [x] CSS Animation 과정 살펴보기
+  - GPU 가속과 레이아웃 재계산이 필요한 속성들 알아보기
