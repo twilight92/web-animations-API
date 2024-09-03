@@ -8,8 +8,8 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
 <br>
 
 ## What I Learned
-✔️ 자바스크립트로 CSS 애니메이션을 자유자재로 컨트롤<br>
-✔️ 웹 애니메이션 표준 기술(Web Standard)
+- 자바스크립트로 CSS 애니메이션을 자유자재로 컨트롤<br>
+- 웹 애니메이션 표준 기술(Web Standard)
 
 <br>
 
