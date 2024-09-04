@@ -70,6 +70,24 @@
       </div>
     </div>
 
-    <script></script>
+    <script>
+      const playerButtons = document.querySelector(".player-buttons");
+      playerButtons.addEventListener("click", (event) => {
+        // closest는 나 자신을 포함한 상위 엘리먼트를 찾는다.
+        const target = event.target.closest(".btn");
+        handlePlayer(target.dataset.buttonRole);
+      });
+
+      function handlePlayer(functionName) {
+        switch (functionName) {
+          case "play":
+            break;
+          case "pause":
+            break;
+          case "faster":
+            break;
+        }
+      }
+    </script>
   </body>
 </html>
