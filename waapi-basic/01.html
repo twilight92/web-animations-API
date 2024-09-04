@@ -23,7 +23,7 @@
         // keyframes
         [
           { transform: "translateX(0)", opacity: 0 },
-          { transform: "translateX(-50px)", opacity: 1, offset: 0.9 },
+          { transform: "translateX(-50px)", opacity: 1, offset: 0.6 },
           { transform: "translateX(200px)", opacity: 0.5 },
         ],
         // options
@@ -31,6 +31,8 @@
           duration: 2000,
           easing: "linear",
           fill: "forwards",
+          iterations: Infinity,
+          direction: "alternate",
         }
       );
     </script>
