@@ -30,3 +30,4 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
     - `animation.playState`
     - `animation.finished`
     - `animation.ready`
+  - 애니메이션 생성자 이용
