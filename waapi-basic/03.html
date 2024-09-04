@@ -85,16 +85,16 @@
       };
 
       const animation = box.animate(keyframes, options);
-      console.log(animation);
+      const playerDisplay = document.querySelector(".player-display");
 
       const playerButtons = document.querySelector(".player-buttons");
       playerButtons.addEventListener("click", (event) => {
         // closest는 나 자신을 포함한 상위 엘리먼트를 찾는다.
         const target = event.target.closest(".btn");
-        handlePlayer(target.dataset.buttonRole);
+        handlePlayer(target.dataset.buttonRole, target);
       });
 
-      function handlePlayer(functionName) {
+      function handlePlayer(functionName, btn) {
         switch (functionName) {
           case "play":
             animation.play();
@@ -103,9 +103,19 @@
             animation.pause();
             break;
           case "faster":
-            console.log(animation.playbackRate);
+            const btnLabel = btn.querySelector(".btn-label");
+            if (animation.playbackRate === 1) {
+              animation.playbackRate = 2;
+              btnLabel.innerText = "X1";
+            } else {
+              animation.playbackRate = 1;
+              btnLabel.innerText = "X2";
+            }
             break;
         }
+
+        // playState: 애니메이션의 상태를 문자로 나타냄
+        playerDisplay.innerHTML = animation.playState;
       }
     </script>
   </body>
