@@ -71,6 +71,22 @@
     </div>
 
     <script>
+      const box = document.querySelector(".box");
+
+      const keyframes = [
+        { transform: "translateX(0)" },
+        { transform: "translateX(200%)" },
+      ];
+
+      const options = {
+        duration: 1000,
+        iterations: Infinity,
+        direction: "alternate",
+      };
+
+      const animation = box.animate(keyframes, options);
+      console.log(animation);
+
       const playerButtons = document.querySelector(".player-buttons");
       playerButtons.addEventListener("click", (event) => {
         // closest는 나 자신을 포함한 상위 엘리먼트를 찾는다.
@@ -81,10 +97,13 @@
       function handlePlayer(functionName) {
         switch (functionName) {
           case "play":
+            animation.play();
             break;
           case "pause":
+            animation.pause();
             break;
           case "faster":
+            console.log(animation.playbackRate);
             break;
         }
       }
