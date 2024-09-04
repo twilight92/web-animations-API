@@ -19,4 +19,12 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
   - object 태그를 활용하여 svg에 transition 적용 실습
 - [x] CSS Animation
 - [x] GPU 가속과 레이아웃 재계산이 필요한 속성들 알아보기
-- [x] Web Animation API란?
+- [x] Web Animation API 기본
+  - Web Animation API란?
+  - 기본 애니메이션 만들기
+  - 키프레임과 옵션 분리하기
+  - 애니메이션 컨트롤
+    - `play()`
+    - `pause()`
+    - `playbackRate`
+    - `playState`
