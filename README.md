@@ -31,7 +31,7 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
     - `animation.finished`
     - `animation.ready`
   - 애니메이션 생성자 이용
--  [x] 여러 개의 객체에 애니메이션 적용하기
+- [x] [여러 개의 객체에 애니메이션 적용하기](https://github.com/twilight92/web-animations-API/wiki/%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EA%B0%9D%EC%B2%B4%EC%97%90-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
   - 각각의 객체에 개별 애니메이션 적용하기
   - GroupEffect로 한꺼번에 애니메이션 적용하기
   - SequenceEffect로 순차적으로 애니메이션 적용하기
