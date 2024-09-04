@@ -56,8 +56,8 @@
       ];
 
       const options = {
-        duration: 3000,
-        iterations: Infinity,
+        duration: 500,
+        // iterations: Infinity,
         direction: "alternate",
         fill: "both",
         easing: "ease-in-out",
@@ -65,17 +65,12 @@
 
       const effects = [];
       bars.forEach((bar, index) => {
-        const newOptions = { ...options, delay: index * 200 };
-        const effect = new KeyframeEffect(bar, keyframes, newOptions);
+        const effect = new KeyframeEffect(bar, keyframes, options);
         effects.push(effect);
       });
 
-      const groupEffect = new GroupEffect(effects);
-      const animation = document.timeline.play(groupEffect);
-
-      window.setTimeout(() => {
-        animation.pause();
-      }, 3000);
+      const sequenceEffect = new SequenceEffect(effects);
+      const animation = document.timeline.play(sequenceEffect);
     </script>
   </body>
 </html>
