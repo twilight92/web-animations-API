@@ -16,6 +16,31 @@
   <body>
     <div class="box"></div>
 
-    <script></script>
+    <script>
+      const box = document.querySelector(".box");
+      const keyframes = [
+        { transform: "translateX(0)", opacity: 0 },
+        { transform: "translateX(-50px)", opacity: 1, offset: 0.6 },
+        { transform: "translateX(200px)", opacity: 0.5 },
+      ];
+
+      const options = {
+        duration: 2000,
+        easing: "linear",
+        fill: "forwards",
+        // iterations: Infinity,
+        // direction: "alternate",
+      };
+
+      const animations = box.animate(keyframes, options);
+
+      // finished: Promise 객체 반환
+      animations.finished.then((data) => {
+      animations.ready.then((data) => {
+        console.log("finished: 애니메이션 종료!");
+        // console.log("ready: 애니메이션 시작!");
+        console.log(data === animations);
+      });
+    </script>
   </body>
 </html>
