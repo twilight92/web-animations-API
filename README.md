@@ -31,3 +31,9 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
     - `animation.finished`
     - `animation.ready`
   - 애니메이션 생성자 이용
+-  [x] 여러 개의 객체에 애니메이션 적용하기
+  - 각각의 객체에 개별 애니메이션 적용하기
+  - GroupEffect로 한꺼번에 애니메이션 적용하기
+  - SequenceEffect로 순차적으로 애니메이션 적용하기
+  - Starfield 만들기
+  - 
