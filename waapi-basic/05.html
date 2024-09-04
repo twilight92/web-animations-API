@@ -18,6 +18,7 @@
 
     <script>
       const box = document.querySelector(".box");
+
       const keyframes = [
         { transform: "translateX(0)", opacity: 0 },
         { transform: "translateX(-50px)", opacity: 1, offset: 0.6 },
@@ -32,7 +33,20 @@
         direction: "alternate",
       };
 
-      box.animate(keyframes, options);
+      // 애니메이션 객체 생성자 함수로 생성
+      new Animation(
+        // 키프레임 이펙트 생성자 함수 호출
+        new KeyframeEffect(
+          // 애니메이션을 적용할 오브젝트
+          box,
+
+          // 키프레임 설정
+          keyframes,
+
+          // 타이밍 관련 옵션
+          options
+        )
+      ).play();
     </script>
   </body>
 </html>
