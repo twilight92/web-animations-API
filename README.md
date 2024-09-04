@@ -39,4 +39,4 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
 <br>
 
 ## 개인적인 궁금증 해결
-- [Canvas Vs Web Animation API](https://github.com/twilight92/web-animations-API/wiki/Canvas-Vs-Web-Animation-API)
+- [Canvas VS Web Animation API](https://github.com/twilight92/web-animations-API/wiki/Canvas-Vs-Web-Animation-API)
