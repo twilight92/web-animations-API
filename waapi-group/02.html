@@ -37,6 +37,7 @@
   <body>
     <div class="bar-container"></div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations-next.min.js"></script>
     <script>
       const barContainer = document.querySelector(".bar-container");
       const bars = [];
@@ -62,9 +63,19 @@
         easing: "ease-in-out",
       };
 
+      const effects = [];
       bars.forEach((bar, index) => {
-        bar.animate(keyframes, { ...options, delay: index * 200 });
+        const newOptions = { ...options, delay: index * 200 };
+        const effect = new KeyframeEffect(bar, keyframes, newOptions);
+        effects.push(effect);
       });
+
+      const groupEffect = new GroupEffect(effects);
+      const animation = document.timeline.play(groupEffect);
+
+      window.setTimeout(() => {
+        animation.pause();
+      }, 3000);
     </script>
   </body>
 </html>
