@@ -23,8 +23,10 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
   - Web Animation API란?
   - 기본 애니메이션 만들기
   - 키프레임과 옵션 분리하기
-  - 애니메이션 컨트롤
-    - `play()`
-    - `pause()`
-    - `playbackRate`
-    - `playState`
+  - 애니메이션 컨트롤(Promise 사용가능)
+    - `animation.play()`
+    - `animation.pause()`
+    - `animation.playbackRate`
+    - `animation.playState`
+    - `animation.finished`
+    - `animation.ready`
