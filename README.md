@@ -36,4 +36,3 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
   - GroupEffect로 한꺼번에 애니메이션 적용하기
   - SequenceEffect로 순차적으로 애니메이션 적용하기
   - Starfield 만들기
-  - 
