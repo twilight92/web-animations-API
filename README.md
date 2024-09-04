@@ -15,16 +15,18 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
 
 ## Todo
 - [x] [CSS animation VS JS animation](https://github.com/twilight92/web-animations-API/wiki/CSS-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98%EA%B3%BC-JS-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98) 알아보기
-- [x] CSS Transition
+- [x] [CSS Transition](https://github.com/twilight92/web-animations-API/wiki/CSS-Transition%EA%B3%BC-CSS-Animation)
   - object 태그를 활용하여 svg에 transition 적용 실습
-- [x] CSS Animation
+- [x] [CSS Animation](https://github.com/twilight92/web-animations-API/wiki/CSS-Transition%EA%B3%BC-CSS-Animation#css-animation)
 - [x] GPU 가속과 레이아웃 재계산이 필요한 속성들 알아보기
-- [x] Web Animation API 기본
+- [x] [Web Animation API](https://github.com/twilight92/web-animations-API/wiki/Web-Animation-API) 기본
   - Web Animation API란?
   - 기본 애니메이션 만들기
   - 키프레임과 옵션 분리하기
-  - 애니메이션 컨트롤
-    - `play()`
-    - `pause()`
-    - `playbackRate`
-    - `playState`
+  - 애니메이션 컨트롤(Promise 사용가능)
+    - `animation.play()`
+    - `animation.pause()`
+    - `animation.playbackRate`
+    - `animation.playState`
+    - `animation.finished`
+    - `animation.ready`
