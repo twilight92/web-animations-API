@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Starfield</title>
-	<style>
-		body {
-			overflow: hidden;
-			background-color: black;
-		}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starfield</title>
+    <style>
+      body {
+        overflow: hidden;
+        background-color: black;
+      }
 
-		.star {
-			position: absolute;
-			width: 3px;
-			height: 3px;
-			font-size: 0;
-			border-radius: 50%;
-			background: white;
-		}
-	</style>
-</head>
-<body>
+      .star {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        font-size: 0;
+        border-radius: 50%;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations-next.min.js"></script>
 
-	<script type="module">
-		import Star from './Star.js'
-		const numberOffStars = 200;
-		const zModifier = window.innerHeight;
+    <script type="module">
+      import Star from "./Star.js";
+      const numberOffStars = 200;
+      const zModifier = window.innerHeight;
 
-		let x, y, z;
+      let x, y, z;
 
-		for (let i = 0; i < numberOffStars; i++ ) {
-			x = Math.random() * window.innerWidth;
-			y = Math.random() * window.innerHeight;
-			z = Math.random() * zModifier;
+      for (let i = 0; i < numberOffStars; i++) {
+        x = Math.random() * window.innerWidth;
+        y = Math.random() * window.innerHeight;
+        z = Math.random() * zModifier;
 
-			new Star(i, x, y);
-		}
-	</script>
-</body>
+        new Star(i, x, y);
+      }
+    </script>
+  </body>
 </html>
