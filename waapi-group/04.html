@@ -26,9 +26,16 @@
 	<script type="module">
 		import Star from './Star.js'
 		const numberOffStars = 200;
+		const zModifier = window.innerHeight;
+
+		let x, y, z;
 
 		for (let i = 0; i < numberOffStars; i++ ) {
-			new Star(i);
+			x = Math.random() * window.innerWidth;
+			y = Math.random() * window.innerHeight;
+			z = Math.random() * zModifier;
+
+			new Star(i, x, y);
 		}
 	</script>
 </body>
