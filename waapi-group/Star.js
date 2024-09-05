@@ -5,7 +5,7 @@ export default class Star {
     element.innerHTML = number;
 
     element.style.left = `${x}px`;
-    element.style.top = `${y}px;`;
+    element.style.top = `${y}px`;
     document.body.append(element);
   }
 }
