@@ -78,7 +78,15 @@
       }
 
       const groupEffect = new GroupEffect(effects);
-      document.timeline.play(groupEffect);
+      const animation = document.timeline.play(groupEffect);
+
+      window.addEventListener("click", () => {
+        if (animation.playState === "paused") {
+          animation.play();
+        } else {
+          animation.pause();
+        }
+      });
     </script>
   </body>
 </html>
