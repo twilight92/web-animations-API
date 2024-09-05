@@ -35,8 +35,9 @@ CSS 애니메이션 구현을 기반으로 설계된 API로,<br>기존 CSS 애�
   - 각각의 객체에 개별 애니메이션 적용하기
   - GroupEffect로 한꺼번에 애니메이션 적용하기
   - SequenceEffect로 순차적으로 애니메이션 적용하기
-  - Starfield 만들기
+  - Starfield 만들기<br><img src="https://github.com/user-attachments/assets/a72d55ea-598a-4db2-82c2-79a8f6521010" width=500>
 <br>
 
 ## 개인적인 궁금증 해결
 - [Canvas VS Web Animation API](https://github.com/twilight92/web-animations-API/wiki/Canvas-Vs-Web-Animation-API)
+
