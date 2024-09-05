@@ -29,13 +29,15 @@
       const zModifier = window.innerHeight;
 
       let x, y, z;
+      let scale;
 
       for (let i = 0; i < numberOffStars; i++) {
         x = Math.random() * window.innerWidth;
         y = Math.random() * window.innerHeight;
         z = Math.random() * zModifier;
+        scale = zModifier / (zModifier + z);
 
-        new Star(i, x, y);
+        new Star(i, x, y, scale);
       }
     </script>
   </body>
