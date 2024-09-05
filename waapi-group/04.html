@@ -26,14 +26,6 @@
     <script type="module">
       import Star from "./Star.js";
 
-      function set3DPoint(x, y, z) {
-        const scale = zModifier / (zModifier + z);
-        const x2D = x * scale + window.innerWidth * 0.5;
-        const y2D = y * scale + window.innerHeight * 0.5;
-
-        return [x2D, y2D, scale];
-      }
-
       const numberOffStars = 200;
       const zModifier = window.innerHeight;
       const effects = [];
@@ -43,6 +35,14 @@
       let keyframes, options;
       let pointFrom, pointTo;
       let star;
+
+      function set3DPoint(x, y, z) {
+        const scale = zModifier / (zModifier + z);
+        const x2D = x * scale + window.innerWidth * 0.5;
+        const y2D = y * scale + window.innerHeight * 0.5;
+
+        return [x2D, y2D, scale];
+      }
 
       for (let i = 0; i < numberOffStars; i++) {
         x = Math.random() * window.innerWidth - window.innerWidth * 0.5;
