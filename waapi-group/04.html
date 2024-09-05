@@ -27,7 +27,9 @@
       import Star from "./Star.js";
 
       const numberOffStars = 200;
-      const zModifier = window.innerHeight;
+      const canvasWidth = window.innerWidth;
+      const canvasHeight = window.innerHeight;
+      const zModifier = canvasHeight;
       const effects = [];
 
       let x, y, z;
@@ -38,15 +40,15 @@
 
       function set3DPoint(x, y, z) {
         const scale = zModifier / (zModifier + z);
-        const x2D = x * scale + window.innerWidth * 0.5;
-        const y2D = y * scale + window.innerHeight * 0.5;
+        const x2D = x * scale + canvasWidth * 0.5;
+        const y2D = y * scale + canvasHeight * 0.5;
 
         return [x2D, y2D, scale];
       }
 
       for (let i = 0; i < numberOffStars; i++) {
-        x = Math.random() * window.innerWidth - window.innerWidth * 0.5;
-        y = Math.random() * window.innerHeight - window.innerHeight * 0.5;
+        x = Math.random() * canvasWidth - canvasWidth * 0.5;
+        y = Math.random() * canvasHeight - canvasHeight * 0.5;
         z = Math.random() * zModifier;
 
         scale = zModifier / (zModifier + z);
