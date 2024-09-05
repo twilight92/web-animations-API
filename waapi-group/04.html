@@ -28,8 +28,8 @@
 
       function set3DPoint(x, y, z) {
         const scale = zModifier / (zModifier + z);
-        const x2D = x * scale;
-        const y2D = y * scale;
+        const x2D = x * scale + window.innerWidth * 0.5;
+        const y2D = y * scale + window.innerHeight * 0.5;
 
         return [x2D, y2D, scale];
       }
@@ -45,8 +45,8 @@
       let star;
 
       for (let i = 0; i < numberOffStars; i++) {
-        x = Math.random() * window.innerWidth;
-        y = Math.random() * window.innerHeight;
+        x = Math.random() * window.innerWidth - window.innerWidth * 0.5;
+        y = Math.random() * window.innerHeight - window.innerHeight * 0.5;
         z = Math.random() * zModifier;
 
         scale = zModifier / (zModifier + z);
